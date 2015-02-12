@@ -1,0 +1,67 @@
+body{
+  	background-image: url(Oil1.jpg);
+ 	background-size: 250px;
+ 	text-align: center;
+}
+
+h1 {
+  	font-family: 'NTR', sans-serif;
+  	font-size: 200px;
+  	line-height: 100px;
+  	margin-bottom: 90px;
+	color: rgb(215, 236, 202);
+	text-align: center;
+	text-shadow:
+	 	-1px -1px 0 Blue,
+		5px -5px 0 Blue,
+		-1px 1px 0 Blue,
+		1px 1px 0 Blue;  
+}
+
+button {
+	font-family: 'NTR', sans-serif;
+	background-color: rgb(244, 145, 165);
+	color: blue;
+	font-size:30px;
+	text-align: center;
+	text-shadow:
+	 	-1px -1px 0 rgb(215, 236, 202),
+		0px -0px 0 rgb(215, 236, 202),
+		-1px 1px 0 rgb(215, 236, 202),
+		1px 1px 0 rgb(215, 236, 202);  
+	line-height: 0px;
+	border-radius:0px;
+	width: 130px;
+  	padding: 25px;
+	border: 1.5px solid black;
+	border-radius: 5px;
+}
+
+button:hover{
+  box-shadow: 2px 2px 3px blue;
+}
+
+a {
+	color: Blue;
+	-moz-transition: all 1s ease-in;
+    -o-transition: all 1s ease-in;
+    -webkit-transition: all 1s ease-in;
+    transition: all 1s ease-in;
+    text-shadow: none;
+}
+
+a:hover {
+	color: rgb(215, 236, 202);
+}
+
+#message {
+	color: Pink;
+	text-shadow:
+	 	-1px -1px 0 Blue,
+		2px -2px 0 Blue,
+		-1px 1px 0 Blue,
+		1px 1px 0 Blue; 
+	font-size: 80px;
+	display: none;
+	padding: 0px 200px;
+}
