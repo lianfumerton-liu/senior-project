@@ -388,7 +388,7 @@ var image2 = ["accessory",
 "word",
 "workings",,
 "wrinkle"];
-var image_manipulation = ["blend", "warp", "outline", "pixellate", "stretch", "invert"];
+var image_manipulation = ["blend", "warp", "outline", "pixellate", "stretch", "invert", "replicate"];
 var material = ["nylon", "mylar", "poly satin", "brushed tricoat", "linen", "poly mesh"];
 var material_manipulation1 = ["constricted", "twisted", "stretched", "spray painted", "soaked", "cut", "folded", "crumpled"];
 var material_manipulation2 = material_manipulation1;
