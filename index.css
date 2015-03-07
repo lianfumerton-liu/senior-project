@@ -1,12 +1,10 @@
 body{
-  	background-image: url(Oil1.jpg);
- 	background-size: 250px;
  	text-align: center;
 }
 
 h1 {
   	font-family: 'NTR', sans-serif;
-  	font-size: 200px;
+  	font-size: 100px;
   	line-height: 100px;
   	margin-bottom: 90px;
 	color: rgb(215, 236, 202);
@@ -20,7 +18,7 @@ h1 {
 
 button {
 	font-family: 'NTR', sans-serif;
-	background-color: rgb(244, 145, 165);
+	background-color: rgb(234, 176, 207);
 	color: blue;
 	font-size:30px;
 	text-align: center;
@@ -54,14 +52,14 @@ a:hover {
 	color: rgb(215, 236, 202);
 }
 
-#message {
+.message {
 	color: Pink;
 	text-shadow:
 	 	-1px -1px 0 Blue,
 		2px -2px 0 Blue,
 		-1px 1px 0 Blue,
 		1px 1px 0 Blue; 
-	font-size: 80px;
+	font-size: 60px;
 	display: none;
 	padding: 0px 200px;
 }

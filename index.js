@@ -388,27 +388,49 @@ var image2 = ["accessory",
 "word",
 "workings",,
 "wrinkle"];
-var image_manipulation = ["blend", "warp", "outline", "pixellate", "stretch", "invert", "replicate", "extrude"];
-var material = ["nylon", "mylar", "poly satin", "brushed tricoat", "linen", "poly mesh"];
-var material_manipulation1 = ["constricted", "twisted", "stretched", "spray painted", "soaked", "cut", "folded", "crumpled"];
+var image_manipulation = ["combine", "amalgamate", "integrate", "incorporate", "merge", "fuse", "blend", "separate", "split", "divide", "detatch", "isolate", "dissociate", "scatter"];
+var material = ["substance", "facet", "material", "matter", "substrate", "medium", "stuff", "thing", "item", "element", "component", "surface"];
+var material_manipulation1 = ["soft", "smooth", "rough", "shiny", "textured", "solid", "uneven"];
 var material_manipulation2 = material_manipulation1;
+var prepositions = ["on", "with", "in", "over", "across", "between", "along", "amid", "among", "around", "onto", "into", "through", "upon"];
+var conjunctions = ["yet", "but", "but also", "and", "or"]
+var interactions = ["Hung", "Pinned", "Shelved"]
+
 
 var google_start = "https://www.google.com/search?q=";
 var google_end = "&tbm=isch";
 
 function doFunction() {
-
+	
 	var my_image1 = image1[Math.floor(Math.random() * image1.length)];
 	var my_image2 = image2[Math.floor(Math.random() * image2.length)];
 	var my_image_manipulation = image_manipulation[Math.floor(Math.random() * image_manipulation.length)];
 	var my_material = material[Math.floor(Math.random() * material.length)];
 	var my_material_manipulation1 = material_manipulation1[Math.floor(Math.random() * material_manipulation1.length)];
 	var my_material_manipulation2 = my_material_manipulation1;
+	var my_preposition = prepositions[Math.floor(Math.random() * prepositions.length)];
+	var my_conjunction = conjunctions[Math.floor(Math.random() * conjunctions.length)];
+	var my_interactions = interactions[Math.floor(Math.random() * interactions.length)];
+
+	var number1 = Math.floor(Math.random() * 27) + 4;
+	var number2 = Math.floor(Math.random() * 27) + 4;
+	//Math.floor(Math.randon() * my_list.length) = random number 0 -> (list.length - 1)
+
 	while (my_material_manipulation2 == my_material_manipulation1) {
 		my_material_manipulation2 = material_manipulation2[Math.floor(Math.random() * material_manipulation2.length)];
 	}
 
-	$('#message').css("display","block");
+	$('.message').css("display","block");
+
+	$('#number1').html(number1);
+	$('#number2').html(number2);
+
+	$('#interaction').html(my_interactions);
+
+
+	$('#preposition').html(my_preposition);
+
+	$('#conjunction').html(my_conjunction);
 
 	$('#image1').html(my_image1);	
 	$("a#image1").attr("href", google_start + my_image1 + google_end);
