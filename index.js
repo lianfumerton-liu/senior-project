@@ -412,8 +412,8 @@ function doFunction() {
 	var my_conjunction = conjunctions[Math.floor(Math.random() * conjunctions.length)];
 	var my_interactions = interactions[Math.floor(Math.random() * interactions.length)];
 
-	var number1 = Math.floor(Math.random() * 27) + 4;
-	var number2 = Math.floor(Math.random() * 27) + 4;
+	var number1 = Math.floor(Math.random() * 38) + 3;
+	var number2 = Math.floor(Math.random() * 38) + 3;
 	//Math.floor(Math.randon() * my_list.length) = random number 0 -> (list.length - 1)
 
 	while (my_material_manipulation2 == my_material_manipulation1) {
